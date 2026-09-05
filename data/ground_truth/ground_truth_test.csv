@@ -1,0 +1,31 @@
+case_id,case_type,transaction_ids,settlement_ids,refund_ids,fee_ids,expected_decision,notes,split
+CASE001,1to1_clean,TXN1001,SET2001,,,AUTO_MATCHED,"Exact amount, minor/no date shift, same merchant name.",test
+CASE011,1to1_clean,TXN1011,SET2011,,,AUTO_MATCHED,"Exact amount, minor/no date shift, same merchant name.",test
+CASE007,1to1_clean,TXN1007,SET2007,,,AUTO_MATCHED,"Exact amount, minor/no date shift, same merchant name.",test
+CASE003,1to1_clean,TXN1003,SET2003,,,AUTO_MATCHED,"Exact amount, minor/no date shift, same merchant name.",test
+CASE006,1to1_clean,TXN1006,SET2006,,,AUTO_MATCHED,"Exact amount, minor/no date shift, same merchant name.",test
+CASE017,1to1_name_noise,TXN1017,SET2017,,,AUTO_MATCHED,Merchant name differs between internal and bank records; same entity.,test
+CASE025,1to1_name_noise,TXN1025,SET2025,,,AUTO_MATCHED,Merchant name differs between internal and bank records; same entity.,test
+CASE022,1to1_name_noise,TXN1022,SET2022,,,AUTO_MATCHED,Merchant name differs between internal and bank records; same entity.,test
+CASE031,many_to_one,TXN1040;TXN1041;TXN1042,SET2031,,FEE4006,AUTO_MATCHED,"3 transactions batched, 394.8 platform fee deducted.",test
+CASE029,many_to_one,TXN1035;TXN1036,SET2029,,FEE4004,AUTO_MATCHED,"2 transactions batched, 250.2 platform fee deducted.",test
+CASE035,one_to_many,TXN1050,SET2036;SET2037,,,AUTO_MATCHED,Single transaction split across two settlement payouts.,test
+CASE034,one_to_many,TXN1049,SET2034;SET2035,,,AUTO_MATCHED,Single transaction split across two settlement payouts.,test
+CASE043,refund_reduces_settlement,TXN1058,SET2049,REF3004,,AUTO_MATCHED,Settlement = transaction amount minus refund.,test
+CASE044,refund_reduces_settlement,TXN1059,SET2050,REF3005,,AUTO_MATCHED,Settlement = transaction amount minus refund.,test
+CASE049,partial_settlement,TXN1064,SET2055,,,NEEDS_REVIEW,"Only 5928 of 9880 settled so far; remainder 3952 still pending, not an error.",test
+CASE052,partial_settlement,TXN1067,SET2058,,,NEEDS_REVIEW,"Only 3995 of 7990 settled so far; remainder 3995 still pending, not an error.",test
+CASE054,fee_rounding_near_miss,TXN1069,SET2060,,FEE4009,AUTO_MATCHED,"Fee has a small rounding fraction; requires tolerance, not exact equality.",test
+CASE056,fee_rounding_near_miss,TXN1071,SET2062,,FEE4011,AUTO_MATCHED,"Fee has a small rounding fraction; requires tolerance, not exact equality.",test
+CASE061,ambiguous_same_amount,TXN1077,SET2067,,,NEEDS_REVIEW,"TXN1077 and TXN1078 are equally plausible candidates; no signal distinguishes them from visible data. Correct behavior is escalation, not a forced guess.",test
+CASE064,ambiguous_same_amount,TXN1083,SET2070,,,NEEDS_REVIEW,"TXN1083 and TXN1084 are equally plausible candidates; no signal distinguishes them from visible data. Correct behavior is escalation, not a forced guess.",test
+CASE068,duplicate_record,TXN1091,SET2074,,,AUTO_MATCHED,"TXN1092 is an accidental duplicate entry of TXN1091; only one settlement exists and should match once, not twice.",test
+CASE076,orphan_settlement,,SET2082,,,UNRESOLVED,No transaction exists for this settlement; genuinely unresolved by design.,test
+CASE073,orphan_settlement,,SET2079,,,UNRESOLVED,No transaction exists for this settlement; genuinely unresolved by design.,test
+CASE077,orphan_refund,,,REF3009,,UNRESOLVED,"References non-existent transaction TXN9109; data error, genuinely unresolved.",test
+CASE084,missing_settlement,TXN1100,,,,UNRESOLVED,No settlement exists yet for this transaction; correctly unresolved.,test
+CASE085,missing_settlement,TXN1101,,,,UNRESOLVED,No settlement exists yet for this transaction; correctly unresolved.,test
+CASE089,date_shift_only,TXN1105,SET2085,,,AUTO_MATCHED,Unusually long (8-day) settlement delay; tests date-window tuning.,test
+CASE094,borderline_confidence,TXN1112,SET2090,,,AUTO_MATCHED,"TXN1112 matches exactly; TXN1113 is a close but inferior candidate (amount off by 10, name variant). Tests threshold tuning.",test
+CASE093,borderline_confidence,TXN1110,SET2089,,,AUTO_MATCHED,"TXN1110 matches exactly; TXN1111 is a close but inferior candidate (amount off by 10, name variant). Tests threshold tuning.",test
+CASE098,batched_fee_three_txns,TXN1120;TXN1121;TXN1122,SET2094,,FEE4015,AUTO_MATCHED,Three transactions batched with one combined platform fee.,test

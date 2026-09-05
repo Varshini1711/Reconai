@@ -1,0 +1,72 @@
+case_id,case_type,transaction_ids,settlement_ids,refund_ids,fee_ids,expected_decision,notes,split
+CASE004,1to1_clean,TXN1004,SET2004,,,AUTO_MATCHED,"Exact amount, minor/no date shift, same merchant name.",dev
+CASE013,1to1_clean,TXN1013,SET2013,,,AUTO_MATCHED,"Exact amount, minor/no date shift, same merchant name.",dev
+CASE015,1to1_clean,TXN1015,SET2015,,,AUTO_MATCHED,"Exact amount, minor/no date shift, same merchant name.",dev
+CASE008,1to1_clean,TXN1008,SET2008,,,AUTO_MATCHED,"Exact amount, minor/no date shift, same merchant name.",dev
+CASE012,1to1_clean,TXN1012,SET2012,,,AUTO_MATCHED,"Exact amount, minor/no date shift, same merchant name.",dev
+CASE005,1to1_clean,TXN1005,SET2005,,,AUTO_MATCHED,"Exact amount, minor/no date shift, same merchant name.",dev
+CASE014,1to1_clean,TXN1014,SET2014,,,AUTO_MATCHED,"Exact amount, minor/no date shift, same merchant name.",dev
+CASE010,1to1_clean,TXN1010,SET2010,,,AUTO_MATCHED,"Exact amount, minor/no date shift, same merchant name.",dev
+CASE009,1to1_clean,TXN1009,SET2009,,,AUTO_MATCHED,"Exact amount, minor/no date shift, same merchant name.",dev
+CASE002,1to1_clean,TXN1002,SET2002,,,AUTO_MATCHED,"Exact amount, minor/no date shift, same merchant name.",dev
+CASE024,1to1_name_noise,TXN1024,SET2024,,,AUTO_MATCHED,Merchant name differs between internal and bank records; same entity.,dev
+CASE018,1to1_name_noise,TXN1018,SET2018,,,AUTO_MATCHED,Merchant name differs between internal and bank records; same entity.,dev
+CASE021,1to1_name_noise,TXN1021,SET2021,,,AUTO_MATCHED,Merchant name differs between internal and bank records; same entity.,dev
+CASE019,1to1_name_noise,TXN1019,SET2019,,,AUTO_MATCHED,Merchant name differs between internal and bank records; same entity.,dev
+CASE020,1to1_name_noise,TXN1020,SET2020,,,AUTO_MATCHED,Merchant name differs between internal and bank records; same entity.,dev
+CASE016,1to1_name_noise,TXN1016,SET2016,,,AUTO_MATCHED,Merchant name differs between internal and bank records; same entity.,dev
+CASE023,1to1_name_noise,TXN1023,SET2023,,,AUTO_MATCHED,Merchant name differs between internal and bank records; same entity.,dev
+CASE033,many_to_one,TXN1046;TXN1047;TXN1048,SET2033,,FEE4008,AUTO_MATCHED,"3 transactions batched, 155.8 platform fee deducted.",dev
+CASE027,many_to_one,TXN1029;TXN1030;TXN1031,SET2027,,FEE4002,AUTO_MATCHED,"3 transactions batched, 478.6 platform fee deducted.",dev
+CASE028,many_to_one,TXN1032;TXN1033;TXN1034,SET2028,,FEE4003,AUTO_MATCHED,"3 transactions batched, 401.0 platform fee deducted.",dev
+CASE026,many_to_one,TXN1026;TXN1027;TXN1028,SET2026,,FEE4001,AUTO_MATCHED,"3 transactions batched, 427.8 platform fee deducted.",dev
+CASE030,many_to_one,TXN1037;TXN1038;TXN1039,SET2030,,FEE4005,AUTO_MATCHED,"3 transactions batched, 326.4 platform fee deducted.",dev
+CASE032,many_to_one,TXN1043;TXN1044;TXN1045,SET2032,,FEE4007,AUTO_MATCHED,"3 transactions batched, 204.4 platform fee deducted.",dev
+CASE038,one_to_many,TXN1053,SET2042;SET2043,,,AUTO_MATCHED,Single transaction split across two settlement payouts.,dev
+CASE037,one_to_many,TXN1052,SET2040;SET2041,,,AUTO_MATCHED,Single transaction split across two settlement payouts.,dev
+CASE036,one_to_many,TXN1051,SET2038;SET2039,,,AUTO_MATCHED,Single transaction split across two settlement payouts.,dev
+CASE039,one_to_many,TXN1054,SET2044;SET2045,,,AUTO_MATCHED,Single transaction split across two settlement payouts.,dev
+CASE046,refund_reduces_settlement,TXN1061,SET2052,REF3007,,AUTO_MATCHED,Settlement = transaction amount minus refund.,dev
+CASE045,refund_reduces_settlement,TXN1060,SET2051,REF3006,,AUTO_MATCHED,Settlement = transaction amount minus refund.,dev
+CASE042,refund_reduces_settlement,TXN1057,SET2048,REF3003,,AUTO_MATCHED,Settlement = transaction amount minus refund.,dev
+CASE040,refund_reduces_settlement,TXN1055,SET2046,REF3001,,AUTO_MATCHED,Settlement = transaction amount minus refund.,dev
+CASE047,refund_reduces_settlement,TXN1062,SET2053,REF3008,,AUTO_MATCHED,Settlement = transaction amount minus refund.,dev
+CASE041,refund_reduces_settlement,TXN1056,SET2047,REF3002,,AUTO_MATCHED,Settlement = transaction amount minus refund.,dev
+CASE053,partial_settlement,TXN1068,SET2059,,,NEEDS_REVIEW,"Only 3195 of 6390 settled so far; remainder 3195 still pending, not an error.",dev
+CASE051,partial_settlement,TXN1066,SET2057,,,NEEDS_REVIEW,"Only 5988 of 9980 settled so far; remainder 3992 still pending, not an error.",dev
+CASE050,partial_settlement,TXN1065,SET2056,,,NEEDS_REVIEW,"Only 3144 of 5240 settled so far; remainder 2096 still pending, not an error.",dev
+CASE048,partial_settlement,TXN1063,SET2054,,,NEEDS_REVIEW,"Only 4656 of 7760 settled so far; remainder 3104 still pending, not an error.",dev
+CASE055,fee_rounding_near_miss,TXN1070,SET2061,,FEE4010,AUTO_MATCHED,"Fee has a small rounding fraction; requires tolerance, not exact equality.",dev
+CASE057,fee_rounding_near_miss,TXN1072,SET2063,,FEE4012,AUTO_MATCHED,"Fee has a small rounding fraction; requires tolerance, not exact equality.",dev
+CASE059,fee_rounding_near_miss,TXN1074,SET2065,,FEE4014,AUTO_MATCHED,"Fee has a small rounding fraction; requires tolerance, not exact equality.",dev
+CASE058,fee_rounding_near_miss,TXN1073,SET2064,,FEE4013,AUTO_MATCHED,"Fee has a small rounding fraction; requires tolerance, not exact equality.",dev
+CASE060,ambiguous_same_amount,TXN1075,SET2066,,,NEEDS_REVIEW,"TXN1075 and TXN1076 are equally plausible candidates; no signal distinguishes them from visible data. Correct behavior is escalation, not a forced guess.",dev
+CASE065,ambiguous_same_amount,TXN1085,SET2071,,,NEEDS_REVIEW,"TXN1085 and TXN1086 are equally plausible candidates; no signal distinguishes them from visible data. Correct behavior is escalation, not a forced guess.",dev
+CASE062,ambiguous_same_amount,TXN1079,SET2068,,,NEEDS_REVIEW,"TXN1079 and TXN1080 are equally plausible candidates; no signal distinguishes them from visible data. Correct behavior is escalation, not a forced guess.",dev
+CASE063,ambiguous_same_amount,TXN1081,SET2069,,,NEEDS_REVIEW,"TXN1081 and TXN1082 are equally plausible candidates; no signal distinguishes them from visible data. Correct behavior is escalation, not a forced guess.",dev
+CASE066,duplicate_record,TXN1087,SET2072,,,AUTO_MATCHED,"TXN1088 is an accidental duplicate entry of TXN1087; only one settlement exists and should match once, not twice.",dev
+CASE067,duplicate_record,TXN1089,SET2073,,,AUTO_MATCHED,"TXN1090 is an accidental duplicate entry of TXN1089; only one settlement exists and should match once, not twice.",dev
+CASE070,duplicate_record,TXN1095,SET2076,,,AUTO_MATCHED,"TXN1096 is an accidental duplicate entry of TXN1095; only one settlement exists and should match once, not twice.",dev
+CASE069,duplicate_record,TXN1093,SET2075,,,AUTO_MATCHED,"TXN1094 is an accidental duplicate entry of TXN1093; only one settlement exists and should match once, not twice.",dev
+CASE074,orphan_settlement,,SET2080,,,UNRESOLVED,No transaction exists for this settlement; genuinely unresolved by design.,dev
+CASE075,orphan_settlement,,SET2081,,,UNRESOLVED,No transaction exists for this settlement; genuinely unresolved by design.,dev
+CASE071,orphan_settlement,,SET2077,,,UNRESOLVED,No transaction exists for this settlement; genuinely unresolved by design.,dev
+CASE072,orphan_settlement,,SET2078,,,UNRESOLVED,No transaction exists for this settlement; genuinely unresolved by design.,dev
+CASE080,orphan_refund,,,REF3012,,UNRESOLVED,"References non-existent transaction TXN9716; data error, genuinely unresolved.",dev
+CASE078,orphan_refund,,,REF3010,,UNRESOLVED,"References non-existent transaction TXN9390; data error, genuinely unresolved.",dev
+CASE079,orphan_refund,,,REF3011,,UNRESOLVED,"References non-existent transaction TXN9588; data error, genuinely unresolved.",dev
+CASE081,missing_settlement,TXN1097,,,,UNRESOLVED,No settlement exists yet for this transaction; correctly unresolved.,dev
+CASE082,missing_settlement,TXN1098,,,,UNRESOLVED,No settlement exists yet for this transaction; correctly unresolved.,dev
+CASE086,missing_settlement,TXN1102,,,,UNRESOLVED,No settlement exists yet for this transaction; correctly unresolved.,dev
+CASE083,missing_settlement,TXN1099,,,,UNRESOLVED,No settlement exists yet for this transaction; correctly unresolved.,dev
+CASE091,date_shift_only,TXN1107,SET2087,,,AUTO_MATCHED,Unusually long (8-day) settlement delay; tests date-window tuning.,dev
+CASE088,date_shift_only,TXN1104,SET2084,,,AUTO_MATCHED,Unusually long (8-day) settlement delay; tests date-window tuning.,dev
+CASE090,date_shift_only,TXN1106,SET2086,,,AUTO_MATCHED,Unusually long (8-day) settlement delay; tests date-window tuning.,dev
+CASE087,date_shift_only,TXN1103,SET2083,,,AUTO_MATCHED,Unusually long (8-day) settlement delay; tests date-window tuning.,dev
+CASE092,borderline_confidence,TXN1108,SET2088,,,AUTO_MATCHED,"TXN1108 matches exactly; TXN1109 is a close but inferior candidate (amount off by 10, name variant). Tests threshold tuning.",dev
+CASE096,borderline_confidence,TXN1116,SET2092,,,AUTO_MATCHED,"TXN1116 matches exactly; TXN1117 is a close but inferior candidate (amount off by 10, name variant). Tests threshold tuning.",dev
+CASE095,borderline_confidence,TXN1114,SET2091,,,AUTO_MATCHED,"TXN1114 matches exactly; TXN1115 is a close but inferior candidate (amount off by 10, name variant). Tests threshold tuning.",dev
+CASE097,borderline_confidence,TXN1118,SET2093,,,AUTO_MATCHED,"TXN1118 matches exactly; TXN1119 is a close but inferior candidate (amount off by 10, name variant). Tests threshold tuning.",dev
+CASE099,batched_fee_three_txns,TXN1123;TXN1124;TXN1125,SET2095,,FEE4016,AUTO_MATCHED,Three transactions batched with one combined platform fee.,dev
+CASE101,batched_fee_three_txns,TXN1129;TXN1130;TXN1131,SET2097,,FEE4018,AUTO_MATCHED,Three transactions batched with one combined platform fee.,dev
+CASE100,batched_fee_three_txns,TXN1126;TXN1127;TXN1128,SET2096,,FEE4017,AUTO_MATCHED,Three transactions batched with one combined platform fee.,dev

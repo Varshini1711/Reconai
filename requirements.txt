@@ -1,0 +1,7 @@
+pytest
+rapidfuzz
+google-genai
+python-dotenv
+fastapi
+uvicorn
+python-multipart

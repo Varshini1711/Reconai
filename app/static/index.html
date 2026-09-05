@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ReconAI - AI-Powered Financial Reconciliation</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-icon">⚡</span>
+    <div>
+      <h1>ReconAI</h1>
+      <p>AI-Powered Financial Reconciliation</p>
+    </div>
+  </div>
+  <div id="datasetBadge" class="dataset-badge">demo dataset</div>
+</header>
+
+<nav class="tabs">
+  <button class="tab-btn active" data-tab="dashboard">Dashboard</button>
+  <button class="tab-btn" data-tab="results">Reconciliation Results</button>
+  <button class="tab-btn" data-tab="ask">Ask the Ledger</button>
+  <button class="tab-btn" data-tab="upload">Upload / Run</button>
+</nav>
+
+<main>
+
+  <!-- ================= DASHBOARD ================= -->
+  <section id="tab-dashboard" class="tab-panel active">
+    <div class="cards">
+      <div class="card">
+        <div class="card-label">Total Records</div>
+        <div class="card-value" id="cardTotal">–</div>
+      </div>
+      <div class="card card-auto">
+        <div class="card-label">Auto Matched</div>
+        <div class="card-value" id="cardAuto">–</div>
+      </div>
+      <div class="card card-review">
+        <div class="card-label">Needs Review</div>
+        <div class="card-value" id="cardReview">–</div>
+      </div>
+      <div class="card card-unresolved">
+        <div class="card-label">Unresolved</div>
+        <div class="card-value" id="cardUnresolved">–</div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Match Rate</h2>
+      <div class="bar-outer"><div class="bar-inner" id="matchRateBar"></div></div>
+      <p id="matchRateText" class="muted"></p>
+    </div>
+
+    <div id="evalPanel" class="panel" style="display:none;">
+      <h2>Evaluation Metrics <span class="muted small">(demo dataset only, computed against held-out ground truth)</span></h2>
+      <div class="metrics-grid">
+        <div class="metric"><div class="metric-label">Auto-match precision</div><div class="metric-value" id="mPrecision">–</div></div>
+        <div class="metric"><div class="metric-label">Coverage</div><div class="metric-value" id="mCoverage">–</div></div>
+        <div class="metric"><div class="metric-label">Escalation correctness</div><div class="metric-value" id="mEscalation">–</div></div>
+        <div class="metric"><div class="metric-label">Unresolved accuracy</div><div class="metric-value" id="mUnresolved">–</div></div>
+        <div class="metric"><div class="metric-label">False match rate</div><div class="metric-value metric-danger" id="mFalseMatch">–</div></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>How ReconAI Reasons</h2>
+      <p class="muted">
+        Deterministic logic (Layers 1–4) handles exact matches, fuzzy merchant-name
+        variants, and arithmetic that can be verified with certainty — batching, fees,
+        refunds, split payouts. Only genuinely ambiguous or unexplained cases reach
+        <strong>Layer 5</strong>, where a real LLM agent investigates using controlled
+        tools, proposes a decision, and is forced through an explicit self-critique
+        step before finalizing. AI is used where judgment is actually needed — not
+        applied to every record.
+      </p>
+      <p id="llmStatus" class="muted small"></p>
+    </div>
+  </section>
+
+  <!-- ================= RESULTS ================= -->
+  <section id="tab-results" class="tab-panel">
+    <div class="filter-row">
+      <button class="filter-btn active" data-status="ALL">All</button>
+      <button class="filter-btn" data-status="AUTO_MATCHED">Auto Matched</button>
+      <button class="filter-btn" data-status="NEEDS_REVIEW">Needs Review</button>
+      <button class="filter-btn" data-status="UNRESOLVED">Unresolved</button>
+    </div>
+    <table class="results-table">
+      <thead>
+        <tr>
+          <th>Record</th>
+          <th>Matched With</th>
+          <th>Decision</th>
+          <th>Confidence</th>
+          <th>Method</th>
+        </tr>
+      </thead>
+      <tbody id="resultsBody"></tbody>
+    </table>
+  </section>
+
+  <!-- ================= ASK THE LEDGER ================= -->
+  <section id="tab-ask" class="tab-panel">
+    <div class="chat-box">
+      <div id="chatLog" class="chat-log">
+        <div class="chat-msg chat-system">
+          Ask me things like: "give me a summary", "show me all unresolved records",
+          "which merchants have the most exceptions?", or "why wasn't TXN1234 matched?"
+        </div>
+      </div>
+      <form id="chatForm" class="chat-input-row">
+        <input id="chatInput" type="text" placeholder="Ask the ledger..." autocomplete="off">
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= UPLOAD / RUN ================= -->
+  <section id="tab-upload" class="tab-panel">
+    <div class="panel">
+      <h2>Demo Dataset</h2>
+      <p class="muted">The built-in synthetic dataset stays the default — run it anytime.</p>
+      <button id="runDemoBtn" class="primary-btn">Run AI Reconciliation (Demo Data)</button>
+    </div>
+
+    <div class="panel">
+      <h2>Upload Your Own Data</h2>
+      <p class="muted">Upload all four CSVs, then run reconciliation against them instead.</p>
+      <form id="uploadForm">
+        <label>Transactions CSV <input type="file" name="transactions" accept=".csv" required></label>
+        <label>Settlements CSV <input type="file" name="settlements" accept=".csv" required></label>
+        <label>Refunds CSV <input type="file" name="refunds" accept=".csv" required></label>
+        <label>Fees CSV <input type="file" name="fees" accept=".csv" required></label>
+        <button type="submit" class="secondary-btn">Upload</button>
+      </form>
+      <button id="runUploadedBtn" class="primary-btn" disabled>Run AI Reconciliation (Uploaded Data)</button>
+      <p id="uploadStatus" class="muted small"></p>
+    </div>
+
+    <div id="runProgress" class="panel" style="display:none;">
+      <h2>Running...</h2>
+      <ul id="progressList" class="progress-list"></ul>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= RECORD DETAIL MODAL ================= -->
+<div id="detailModal" class="modal-overlay">
+  <div class="modal">
+    <button id="closeModal" class="modal-close">&times;</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

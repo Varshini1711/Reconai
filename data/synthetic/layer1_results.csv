@@ -1,0 +1,132 @@
+txn_id,settlement_id,status,match_method,evidence,reason,timestamp
+TXN1001,SET2001,MATCHED_LAYER1,exact_amount_merchant_date,Exact amount match; Exact merchant match; Settlement date +2 days; Unique candidate,Unique exact amount+merchant+date-window match.,2026-08-31T05:42:03.891525+00:00
+TXN1002,SET2002,MATCHED_LAYER1,exact_amount_merchant_date,Exact amount match; Exact merchant match; Settlement date +2 days; Unique candidate,Unique exact amount+merchant+date-window match.,2026-08-31T05:42:03.891525+00:00
+TXN1003,SET2003,MATCHED_LAYER1,exact_amount_merchant_date,Exact amount match; Exact merchant match; Settlement date +2 days; Unique candidate,Unique exact amount+merchant+date-window match.,2026-08-31T05:42:03.891525+00:00
+TXN1004,SET2004,MATCHED_LAYER1,exact_amount_merchant_date,Exact amount match; Exact merchant match; Settlement date +2 days; Unique candidate,Unique exact amount+merchant+date-window match.,2026-08-31T05:42:03.891525+00:00
+TXN1005,SET2005,MATCHED_LAYER1,exact_amount_merchant_date,Exact amount match; Exact merchant match; Settlement date +2 days; Unique candidate,Unique exact amount+merchant+date-window match.,2026-08-31T05:42:03.891525+00:00
+TXN1006,SET2006,MATCHED_LAYER1,exact_amount_merchant_date,Exact amount match; Exact merchant match; Settlement date +2 days; Unique candidate,Unique exact amount+merchant+date-window match.,2026-08-31T05:42:03.891525+00:00
+TXN1007,SET2007,MATCHED_LAYER1,exact_amount_merchant_date,Exact amount match; Exact merchant match; Settlement date +2 days; Unique candidate,Unique exact amount+merchant+date-window match.,2026-08-31T05:42:03.891525+00:00
+TXN1008,SET2008,MATCHED_LAYER1,exact_amount_merchant_date,Exact amount match; Exact merchant match; Settlement date +2 days; Unique candidate,Unique exact amount+merchant+date-window match.,2026-08-31T05:42:03.891525+00:00
+TXN1009,SET2009,MATCHED_LAYER1,exact_amount_merchant_date,Exact amount match; Exact merchant match; Settlement date +2 days; Unique candidate,Unique exact amount+merchant+date-window match.,2026-08-31T05:42:03.891525+00:00
+TXN1010,SET2010,MATCHED_LAYER1,exact_amount_merchant_date,Exact amount match; Exact merchant match; Settlement date +2 days; Unique candidate,Unique exact amount+merchant+date-window match.,2026-08-31T05:42:03.891525+00:00
+TXN1011,SET2011,MATCHED_LAYER1,exact_amount_merchant_date,Exact amount match; Exact merchant match; Settlement date +2 days; Unique candidate,Unique exact amount+merchant+date-window match.,2026-08-31T05:42:03.891525+00:00
+TXN1012,SET2012,MATCHED_LAYER1,exact_amount_merchant_date,Exact amount match; Exact merchant match; Settlement date +2 days; Unique candidate,Unique exact amount+merchant+date-window match.,2026-08-31T05:42:03.891525+00:00
+TXN1013,SET2013,MATCHED_LAYER1,exact_amount_merchant_date,Exact amount match; Exact merchant match; Settlement date +2 days; Unique candidate,Unique exact amount+merchant+date-window match.,2026-08-31T05:42:03.891525+00:00
+TXN1014,SET2014,MATCHED_LAYER1,exact_amount_merchant_date,Exact amount match; Exact merchant match; Settlement date +2 days; Unique candidate,Unique exact amount+merchant+date-window match.,2026-08-31T05:42:03.891525+00:00
+TXN1015,SET2015,MATCHED_LAYER1,exact_amount_merchant_date,Exact amount match; Exact merchant match; Settlement date +2 days; Unique candidate,Unique exact amount+merchant+date-window match.,2026-08-31T05:42:03.891525+00:00
+TXN1016,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1017,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1018,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1019,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1020,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1021,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1022,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1023,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1024,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1025,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1026,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1027,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1028,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1029,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1030,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1031,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1032,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1033,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1034,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1035,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1036,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1037,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1038,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1039,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1040,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1041,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1042,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1043,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1044,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1045,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1046,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1047,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1048,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1049,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1050,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1051,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1052,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1053,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1054,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1055,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1056,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1057,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1058,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1059,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1060,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1061,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1062,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1063,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1064,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1065,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1066,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1067,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1068,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1069,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1070,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1071,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1072,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1073,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1074,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1075,,UNMATCHED_LAYER1,exact_amount_merchant_date,Settlement SET2066 also matches ['TXN1076'],No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1076,,UNMATCHED_LAYER1,exact_amount_merchant_date,Settlement SET2066 also matches ['TXN1075'],No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1077,,UNMATCHED_LAYER1,exact_amount_merchant_date,Settlement SET2067 also matches ['TXN1078'],No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1078,,UNMATCHED_LAYER1,exact_amount_merchant_date,Settlement SET2067 also matches ['TXN1077'],No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1079,,UNMATCHED_LAYER1,exact_amount_merchant_date,Settlement SET2068 also matches ['TXN1080'],No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1080,,UNMATCHED_LAYER1,exact_amount_merchant_date,Settlement SET2068 also matches ['TXN1079'],No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1081,,UNMATCHED_LAYER1,exact_amount_merchant_date,Settlement SET2069 also matches ['TXN1082'],No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1082,,UNMATCHED_LAYER1,exact_amount_merchant_date,Settlement SET2069 also matches ['TXN1081'],No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1083,,UNMATCHED_LAYER1,exact_amount_merchant_date,Settlement SET2070 also matches ['TXN1084'],No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1084,,UNMATCHED_LAYER1,exact_amount_merchant_date,Settlement SET2070 also matches ['TXN1083'],No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1085,,UNMATCHED_LAYER1,exact_amount_merchant_date,Settlement SET2071 also matches ['TXN1086'],No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1086,,UNMATCHED_LAYER1,exact_amount_merchant_date,Settlement SET2071 also matches ['TXN1085'],No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1087,,UNMATCHED_LAYER1,exact_amount_merchant_date,Settlement SET2072 also matches ['TXN1088'],No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1088,,UNMATCHED_LAYER1,exact_amount_merchant_date,Settlement SET2072 also matches ['TXN1087'],No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1089,,UNMATCHED_LAYER1,exact_amount_merchant_date,Settlement SET2073 also matches ['TXN1090'],No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1090,,UNMATCHED_LAYER1,exact_amount_merchant_date,Settlement SET2073 also matches ['TXN1089'],No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1091,,UNMATCHED_LAYER1,exact_amount_merchant_date,Settlement SET2074 also matches ['TXN1092'],No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1092,,UNMATCHED_LAYER1,exact_amount_merchant_date,Settlement SET2074 also matches ['TXN1091'],No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1093,,UNMATCHED_LAYER1,exact_amount_merchant_date,Settlement SET2075 also matches ['TXN1094'],No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1094,,UNMATCHED_LAYER1,exact_amount_merchant_date,Settlement SET2075 also matches ['TXN1093'],No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1095,,UNMATCHED_LAYER1,exact_amount_merchant_date,Settlement SET2076 also matches ['TXN1096'],No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1096,,UNMATCHED_LAYER1,exact_amount_merchant_date,Settlement SET2076 also matches ['TXN1095'],No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1097,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1098,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1099,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1100,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1101,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1102,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1103,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1104,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1105,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1106,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1107,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1108,SET2088,MATCHED_LAYER1,exact_amount_merchant_date,Exact amount match; Exact merchant match; Settlement date +2 days; Unique candidate,Unique exact amount+merchant+date-window match.,2026-08-31T05:42:03.891525+00:00
+TXN1109,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1110,SET2089,MATCHED_LAYER1,exact_amount_merchant_date,Exact amount match; Exact merchant match; Settlement date +2 days; Unique candidate,Unique exact amount+merchant+date-window match.,2026-08-31T05:42:03.891525+00:00
+TXN1111,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1112,SET2090,MATCHED_LAYER1,exact_amount_merchant_date,Exact amount match; Exact merchant match; Settlement date +2 days; Unique candidate,Unique exact amount+merchant+date-window match.,2026-08-31T05:42:03.891525+00:00
+TXN1113,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1114,SET2091,MATCHED_LAYER1,exact_amount_merchant_date,Exact amount match; Exact merchant match; Settlement date +2 days; Unique candidate,Unique exact amount+merchant+date-window match.,2026-08-31T05:42:03.891525+00:00
+TXN1115,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1116,SET2092,MATCHED_LAYER1,exact_amount_merchant_date,Exact amount match; Exact merchant match; Settlement date +2 days; Unique candidate,Unique exact amount+merchant+date-window match.,2026-08-31T05:42:03.891525+00:00
+TXN1117,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1118,SET2093,MATCHED_LAYER1,exact_amount_merchant_date,Exact amount match; Exact merchant match; Settlement date +2 days; Unique candidate,Unique exact amount+merchant+date-window match.,2026-08-31T05:42:03.891525+00:00
+TXN1119,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1120,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1121,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1122,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1123,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1124,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1125,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1126,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1127,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1128,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1129,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1130,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00
+TXN1131,,UNMATCHED_LAYER1,exact_amount_merchant_date,No exact amount+merchant match within date window,No unique deterministic candidate found.,2026-08-31T05:42:03.891525+00:00

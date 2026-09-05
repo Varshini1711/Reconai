@@ -1,0 +1,4 @@
+.env
+__pycache__/
+*.pyc
+data/synthetic/.llm_agent_cache_gemini.json
